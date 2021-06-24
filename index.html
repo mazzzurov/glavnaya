@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <style type="text/css">
+      h1 {
+    background-image:linear-gradient(to right, red, blue);
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+    padding: 15px;
+    text-align:center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.menu {
+    text-decoration: none;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(to right,red, navy);
+    border-radius: 7px;
+    padding: 4px;
+}
+
+.menu::after {
+    content: "";
+    background-color: rgb (15, 77, 97);
+    border-radius: 50%;
+    transition: width 1s ease, height 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    height: 0px;
+    width: 0px;
+    z-index: 1;
+}
+
+.menu:hover::after {
+    height: 250px;
+    width: 250px;
+}
+
+span {
+    border-bottom: 2px solid gold;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.iphone {
+    width: 340px;
+    height: 315px;
+    background-color: gold;
+    margin: 40px;
+}
+
+img {
+    width: 250px;
+    height: 180px;
+    margin-left: 40px;
+    margin-top: 28px;
+    margin-right: 40px;
+}
+
+.assorti {
+    margin: 10px;
+    text-align: center;
+}
+
+.iphonebuy {
+    background-image: linear-gradient( to right, black, green, black);
+    color: white;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.noters {
+    width: 340px;
+    height: 315px;
+    background-color: gold;
+    margin: 40px;
+}
+
+.predlog {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+}
+
+h2, h3 {
+    text-align:center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.komment {
+    border-left: 10px double gold;
+}
+
+span {
+    margin-left: 5px;
+    border-bottom: 2px dotted gold;
+}
+
+footer {
+    background-image: linear-gradient(to right, red, blue);
+    color: white;
+}
+
+.foot {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu:hover {
+    color:black;
+    transform:scale(1.5);
+    transition: 0.5s linear;
+}
+
+.komment p {
+    margin-left: 5px;
+}
+    </style>
+  </head>
+    <header> 
+        <h1>Магазин электроники "TechnoCenter"</h1>
+        <nav>
+            <a class="menu" href="https://mazzzurov.github.io/glavnaya/">Главная</a>
+            <a class="menu" href="https://mazzzurov.github.io/smartfoni/">Смартфоны</a>
+            <a class="menu" href="https://mazzzurov.github.io/notebookers/">Ноутбуки</a>
+        </nav>
+    </header>
+    <main>
+        <p>Добро пожаловать в интернет-магазин электроники "TechnoCenter"! Здесь вы можете найти телефоны, ноутбуки и аксессуары от любых брендов <span>по самым выгодным ценам!</span></p>
+        <h2>Покупатели советуют</h2>
+        <section class="predlog">
+            <article class="iphone">
+                <img class="i.phone" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnIIrBFY0GdOTBlQgupvtqzEdtHwZ_sAvLKg&usqp=CAU"/>
+                <p class="assorti">Iphone в ассортименте от 19999 рублей</p>
+                <a class="iphonebuy">Подробнее</a>
+            </article>
+            <article class="iphone">
+                <img class="i.phone" src="https://cdn.svyaznoy.ru/upload/iblock/e8f/f05fef1db42657ebabe84f5038cf75096406fd1c8d0bd312e0c662495752c575.jpg/resize/307x224/"/>
+                <p class="assorti">Игровые ноутбуки MSI от 49999 рублей</p>
+                <a class="iphonebuy">Подробнее</a>
+            </article>
+        </section>
+        <h3>Наши отзывы</h3>
+        <div class="komment">
+            <p><span>Алексей</span><br/> Вчера купил наушники AirPods Pro,<br/> всё отлично, очень быстро доставили!</p>
+        </div>
+              <div class="komment">
+            <p><span>Марина</span><br/> Недавно купила смартфон Samsung Galaxy A30,<br/> всем довольна!</p>
+        </div>
+    </main>
+    <footer>
+        <p>Телефон: 8(988) 525-75-80</p>
+        <a class ="foot" href="https://www.instagram.com/mazurov_22/">Instagram</a>
+    </footer>
+</html>
